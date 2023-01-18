@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bình An Credit</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="image/credit-card.png" type="image/png"/>
+</head>
+<body>
+	<div id="toggle">
+		<i class="indicator"></i>
+	</div>
+
+
+	<div class="InforCard">
+		<img id="Avatar" src="image/PS21776.JPG"/>
+		<div id="Name">La Đặng Bình An</div>
+		<div id="Description">Learning at FPT Polytechnic</div>
+
+
+		<fieldset class="Card">
+			<legend>Contacts Methods</legend>
+			<a class="Tag" href="mailto:binhan29122003@gmail.com">
+				<img class="dark" src="image/mail.png" alt="Email Logo">
+				<img class="light" src="image/gmail.png" alt="Email Logo">
+				<div>Private Email</div>
+			</a>
+			<a class="Tag" href="mailto:anldbps21776@fpt.edu.vn">
+				<img class="dark" src="image/mail.png" alt="Email Logo">
+				<img class="light" src="image/gmail.png" alt="Email Logo">
+				<div>Edu Email</div>
+			</a>
+			<a class="Tag" href="tel:0378001834">
+				<img class="dark" src="image/call.png" alt="PhoneNumber Logo">
+				<img class="light" src="image/call-color.png" alt="PhoneNumber Logo">
+				<div>Phone Number 1</div>
+			</a>
+			<a class="Tag" href="tel:0352519751">
+				<img class="dark" src="image/call.png" alt="PhoneNumber Logo">
+				<img class="light" src="image/call-color.png" alt="PhoneNumber Logo">
+				<div>Phone Number 2</div>
+			</a>
+			<a class="Tag" href="http://zaloapp.com/qr/p/1crk67zquornc">
+				<img class="dark" src="image/zalo.png" alt="Zalo Logo">
+				<img class="light" src="image/zalo-color.png" alt="Zalo Logo">
+				<div>Zalo</div>
+			</a>
+		</fieldset>
+		
+
+		<fieldset class="Card">
+			<legend>Social Networks</legend>
+			<a class="Tag" href="https://github.com/AnLaVN">
+				<img class="dark" src="image/github.png" alt="Github Logo">
+				<img class="light" src="image/github-color.png" alt="Github Logo">
+				<div>Github</div>
+			</a>
+			<a class="Tag" href="https://t.me/AnLaVN">
+				<img class="dark" src="image/telegram.png" alt="Telegram Logo">
+				<img class="light" src="image/telegram-color.png" alt="Telegram Logo">
+				<div>Telegram</div>
+			</a>
+			<a class="Tag" href="https://www.facebook.com/ladangbinhan2003">
+				<img class="dark" src="image/facebook.png" alt="Facebook Logo">
+				<img class="light" src="image/facebook-color.png" alt="Facebook Logo">
+				<div>Facebook</div>
+			</a>
+			<a class="Tag" href="https://m.me/ladangbinhan2003">
+				<img class="dark" src="image/messenger.png" alt="Messenger Logo">
+				<img class="light" src="image/messenger-color.png" alt="Messenger Logo">
+				<div>Messenger</div>
+			</a>
+			<a class="Tag" href="https://www.youtube.com/@AnLaVN">
+				<img class="dark" src="image/youtube.png" alt="Pinterest Logo">
+				<img class="light" src="image/youtube-color.png" alt="Youtube Logo">
+				<div>Youtube</div>
+			</a>
+			<a class="Tag" href="https://www.pinterest.com/binhan29122003">
+				<img class="dark" src="image/pinterest.png" alt="Pinterest Logo">
+				<img class="light" src="image/pinterest-color.png" alt="Pinterest Logo">
+				<div>Pinterest</div>
+			</a>
+			<a class="Tag" href="https://discordapp.com/users/607125303973904394/">
+				<img class="dark" src="image/discord.png" alt="Discord Logo">
+				<img class="light" src="image/discord-color.png" alt="Discord Logo">
+				<div>Discord</div>
+			</a>
+			<a class="Tag" href="https://discord.gg/WYWMAFSEpu">
+				<img class="dark" src="image/IT.jpg" alt="Discord Server Logo">
+				<img class="light" src="image/IT.jpg" alt="Discord Server Logo">
+				<div>Discord Server</div>
+			</a>
+		</fieldset>
+
+
+		<fieldset class="Card">
+			<legend>Bank Transfers</legend>
+			<a class="Tag" onclick="copyHD()">
+				<img class="dark" src="image/HDBank.png" alt="HD Bank Logo">
+				<img class="light" src="image/HDBank.png" alt="HD Bank Logo">
+				<div>HD Bank</div>
+			</a>
+			<a class="Tag" onclick="copyMB()">
+				<img class="dark" src="image/ViettelPay.png" alt="ViettelPay Logo">
+				<img class="light" src="image/ViettelPay.png" alt="ViettelPay Logo">
+				<div>ViettelPay - MB Bank</div>
+			</a>
+			<a class="Tag" href="https://me.momo.vn/AnLaVN">
+				<img class="dark" src="image/MoMo.png" alt="MoMo Logo">
+				<img class="light" src="image/MoMo.png" alt="MoMo Logo">
+				<div>MoMo</div>
+			</a>
+		</fieldset>
+		
+		<div id="Credit1">Digital Business Card</div>
+		<div id="Credit2"><a href="https://anlavn.github.io/Binh_An-Credit/">Make by AnLa</a></div>
+	</div>
+
+	
+	<script>
+		function ThongBao(bool){ 
+			if(bool)alert("You just copied the bank number to the clipboard!\nBạn vừa sao chép STK vào bộ nhớ tạm !");
+			else	alert("Can not copy the bank number to the clipboard!\nKhông thể sao chép STK vào bộ nhớ tạm !");
+		}
+		function copy(num) { navigator.clipboard.writeText(num).then(() => { ThongBao(true); }).catch(() => {	ThongBao(false);	});}
+		function copyHD(){ copy('154704070021829');		}
+		function copyMB(){ copy('9704229209965134067');	}
+	</script>
+	<script>
+		const body = document.querySelector('body');
+		const toggle = document.getElementById('toggle');
+		toggle.onclick = function(){
+			toggle.classList.toggle('active');
+			body.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
