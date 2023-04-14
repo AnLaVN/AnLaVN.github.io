@@ -100,10 +100,15 @@
 				<img class="light" src="image/HDBank.png" alt="HD Bank Logo">
 				<div>HD Bank</div>
 			</a>
-			<a class="Tag" onclick="copyMB()">
+			<a class="Tag" onclick="copyMD()">
+				<img class="dark" src="image/MBBank.png" alt="MB Bank Logo">
+				<img class="light" src="image/MBBank.png" alt="MB Bank Logo">
+				<div>MB Bank</div>
+			</a>
+			<a class="Tag" onclick="copyVT()">
 				<img class="dark" src="image/ViettelPay.png" alt="ViettelPay Logo">
 				<img class="light" src="image/ViettelPay.png" alt="ViettelPay Logo">
-				<div>ViettelPay - MB Bank</div>
+				<div>ViettelPay</div>
 			</a>
 			<a class="Tag" href="https://me.momo.vn/AnLaVN">
 				<img class="dark" src="image/MoMo.png" alt="MoMo Logo">
@@ -124,7 +129,8 @@
 		}
 		function copy(num) { navigator.clipboard.writeText(num).then(() => { ThongBao(true); }).catch(() => {	ThongBao(false);	});}
 		function copyHD(){ copy('154704070021829');		}
-		function copyMB(){ copy('9704229209965134067');	}
+		function copyMD(){ copy('0378001834');			}
+		function copyVT(){ copy('9704229209965134067');	}
 	</script>
 	<script>
 		const body = document.querySelector('body');
