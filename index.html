@@ -76,19 +76,19 @@
 				<img class="light" src="image/MoMo.png" alt="MoMo Logo">
 				<div>MoMo</div>
 			</a>
-			<a class="Tag" onclick="copyHD()">
+			<a class="Tag" href="https://dl.vietqr.io/pay?app=hdb&ba=154704070021829@hdb">
 				<img class="light" src="image/HDBank.png" alt="HD Bank Logo">
 				<div>HD Bank</div>
 			</a>
-			<a class="Tag" onclick="copyPN()">
+			<a class="Tag" href="https://dl.vietqr.io/pay?app=mb&ba=0378001834@mb">
 				<img class="light" src="image/MBBank.png" alt="MB Bank Logo">
 				<div>MB Bank</div>
 			</a>
-			<a class="Tag" onclick="copyPN()">
+			<a class="Tag" href="https://dl.vietqr.io/pay?app=cake&ba=0378001834@cake">
 				<img class="light" src="image/CAKEBank.jpg" alt="CAKE Bank Logo">
 				<div>CAKE Bank</div>
 			</a>
-			<a class="Tag" onclick="copyVT()">
+			<a class="Tag" href="https://dl.vietqr.io/pay?app=mb&ba=9704229209965134067@mb">
 				<img class="light" src="image/ViettelPay.png" alt="ViettelPay Logo">
 				<div>ViettelPay</div>
 			</a>
@@ -105,7 +105,7 @@
 			if(bool)alert("Bạn vừa sao chép STK vào bộ nhớ tạm !\nYou just copied the bank number to the clipboard!");
 			else	alert("Không thể sao chép STK vào bộ nhớ tạm !\nCan not copy the bank number to the clipboard!");
 		}
-		function copy(num) { navigator.clipboard.writeText(num).then(() => { ThongBao(true); }).catch(() => {	ThongBao(false);	});}
+		function copy(num) { navigator.clipboard.writeText(num).then(() => ThongBao(true)).catch(() => ThongBao(false))}
 		function copyHD(){ copy('154704070021829');		}
 		function copyPN(){ copy('0378001834');			}
 		function copyVT(){ copy('9704229209965134067');	}
